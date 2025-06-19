@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Example</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container form-container">
+    <h2>Log In</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    
+    <div class="extras">
+      <a href="#">Forgot username or password?</a>
+      <label><input type="checkbox" /> Remember Me</label>
+    </div>
+
+    <button class="btn" onclick="verifyLogin()">Log In</button>
+    <p id="error-message" class="error-text"></p>
+  </div>
+
+  <script>
+    function verifyLogin() {
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const errorMsg = document.getElementById("error-message");
+
+      if (username === "Spongebob" && password === "Squarepants") {
+        alert("Login successful!");
+        errorMsg.textContent = "";
+      } else {
+        errorMsg.textContent = "Username or password is invalid";
+        errorMsg.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
