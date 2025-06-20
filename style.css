@@ -109,8 +109,8 @@ label {
 /* Responsive design */
 @media (max-width: 600px) {
     .logo {
-        width: 60px;
-        height: 60px;
+        width: 150px;
+        height: 150px;
     }
 
     .btn {
