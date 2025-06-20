@@ -110,6 +110,7 @@ label {
 @media (max-width: 600px) {
     .logo {
         width: 60px;
+        height: 60px;
     }
 
     .btn {
